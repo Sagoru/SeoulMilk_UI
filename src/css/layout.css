@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+html { overflow-y: scroll }
+body { margin: 0px 0px 0px 0px; }
+.tab {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+/* Float the list items side by side */
+.tab li {
+	float: left;
+}
+/* Style the links inside the list items */
+.tab li span {
+	display: inline-block;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;
+	font-size: 17px;
+	transition:0.3s;
+}
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	background-color:rgb(0,154,200);
+	padding: 6px 12px;
+	color:#fff;
+}
+ul.tab li.current{
+	background-color: rgb(0,154,200);
+	color: #222;
+}
+.tabcontent.current {
+	display: block;
+}
+div.btn {
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+#wrap { width: 100%; text-align: center; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;}
+
+#gnb_div {position: absolute; width: 100%; background-color: #FFFFFF; text-align: center; z-index: 999; top: 0;}
+#gnb_div.fixed{position: fixed; z-index: 999;}
+#gnb_div .logo {float: left; width: 200px; margin-left: 10px;}
+#gnb_div .gnb_btn_div {text-align: center; width: 1920px;}
+
+.topmenu {
+	width: 215px;
+	height: 70px;
+	padding: 0 0 0 0;
+	border: black 1px;
+	display: inline-block;
+	text-align: left;
+	cursor: pointer;
+}
+#topb1 {
+	background: url("../img/menu_01.png");
+}
+#topb1:hover {
+	background: url("../img/menu_01_on.png");
+}
+#topb2 {
+	background: url("../img/menu_02.png");
+}
+#topb2:hover {
+	background: url("../img/menu_02_on.png");
+}
+#topb3 {
+	background: url("../img/menu_03.png");
+}
+#topb3:hover {
+	background: url("../img/menu_03_on.png");
+}
+#topb4 {
+	background: url("../img/menu_04.png");
+}
+#topb4:hover {
+	background: url("../img/menu_04_on.png");
+}
+#topb5 {
+	background: url("../img/menu_05.png");
+}
+#topb5:hover {
+	background: url("../img/menu_05_on.png");
+}
+
+
+
+#cam_main_div {padding-top: 74px;}
+#cam_main_top {height: 760px; width: 1920px; background-image: url("../img/img01.jpg");}
+#cam_main_order {height: 250px; width: 1920px; background-color: #d7c1ad; vertical-align: middle; text-align: center;}
+#cam_main_order .best_div {
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	border-radius: 40px;
+	display: inline-block;
+	margin: 7px 7px 7px 7px;
+}
+
+#contest_info_div {padding-top: 74px;}
+#contest_info {height: 486px; width: 1920px; background-image: url("../img/img02.jpg");}
+#contest_prize {height: 300px; width: 1920px; background-color: #d7c1ad; vertical-align: middle;}
+.prizes {
+	display: table;
+	width: 1000px;
+	text-align: center;
+	padding-left: 130px;
+}
+.prizes_row {
+	display: table-row;
+	color: #4d2417;
+}
+.prize_info  {
+	width: 200px;
+	background-color: #d7c1ad;
+	margin: 16px 16px 16px 16px;
+	display: table-cell;
+}
+.prize_item {
+	height: 170px;
+}
+.prize_name {
+	height: 20px;
+	font-size: 15px;
+}
+.prize_detail {
+	height: 20px;
+	font-size: 12px;
+}
+.prize_alert {
+	font-size: 13px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+
+#contest_reg_div {padding-top: 74px;}
+#contest_reg_info {height: 727px; width: 1920px; background-image: url("../img/img03.jpg");}
+#contest_reg_method {height: 500px; width: 1920px; background-color: #FFFFFF; vertical-align: middle;}
+.contest_reg_method_div {
+	display: table;
+	width: 1000px;
+	text-align: center;
+}
+.method_row {
+	display: table-row;
+	color: #4d2417;
+}
+.method_info  {
+	width: 250px;
+	margin: 7px 7px 7px 7px;
+	display: table-cell;
+}
+.method_item {
+	height: 300;
+}
+.method_name {
+	height: 20px;
+}
+
+#contest_vote_div {padding-top: 74px;}
+#contest_vote_top {height: 470px; width: 1920px; background-image: url("../img/img05.jpg");}
+#contest_vote_order {height: 250px; width: 1920px; background-color: #d7c1ad; vertical-align: middle; text-align: center;}
+.vote_order_div {
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	border-radius: 40px;
+	display: inline-block;
+	margin: 7px 7px 7px 7px;
+}
+#contest_vote_search {height: 700px;width: 1920px;background-color: #d7c1ad;}
+
+#special_event_div {padding-top: 74px;height: 500px; background: yellow}
+
+
+#footer {height: 500px}
