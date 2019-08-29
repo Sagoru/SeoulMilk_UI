@@ -98,64 +98,83 @@
 				<div class="vote_order_div"></div>
 				<div class="vote_order_div"></div>
 			</div>
-			<div id="contest_vote_search">
-				<ul class="search_tab">
-					<li class="current" data-tab="tab1"><span>All</span></li>
-					<li data-tab="tab2"><span>강아지</span></li>
-					<li data-tab="tab3"><span>고양이</span></li>
-				</ul>
-
-				<div id="tab1" class="tabcontent current">
-					<h3>All</h3>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				</div>
-
-				<div id="tab2" class="tabcontent">
-					<h3>강아지</h3>
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-				</div>
-
-				<div id="tab3" class="tabcontent">
-					<h3>고양이</h3>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+			<div id="contest_vote_search" align="center">
+				<div id="vote_search_div" align="left">
+					<input id="search_tab_all" type="radio" name="vote_search_option" class="search_tab_input" checked>
+					<label id="search_label_all" for="search_tab_all" class="search_label">ALL</label>
+					<input id="search_tab_dog" type="radio" name="vote_search_option" class="search_tab_input">
+					<label id="search_label_dog" for="search_tab_dog" class="search_label">강아지</label>
+					<input id="search_tab_cat" type="radio" name="vote_search_option" class="search_tab_input">
+					<label id="search_label_cat" for="search_tab_cat" class="search_label">고양이</label>
+					<div class="foot_icon"><img src="./img/icon.png"></div>
+					<input type="text" name="search_text" class="search_text" id="vote_search_text" placeholder="유저 닉네임">
+					<span class="search_btn">검색</span>
+					<section id="vote_search_result_all" class="search_result_sec">ALL 결과</section>
+					<section id="vote_search_result_dog" class="search_result_sec">개 결과</section>
+					<section id="vote_search_result_cat" class="search_result_sec">냥 결과</section>
 				</div>
 			</div>
 		</div>
-		<div id="special_event_div"></div>
+		<div id="special_event_div">
+			<div id="special_event_top"></div>
+			<div id="special_event_movie">
+				<div id="event_mov_play_div">
+					<div id="event_mov_play">
+						<video id='my-video' class='video-js' controls preload='auto' width='709' height='398' data-setup='{}'>
+							<source id="movSrc" src='movie/ipetmilk_cum_720p.mp4' type='video/mp4'>
+							<p class='vjs-no-js'>
+							  To view this video please enable JavaScript, and consider upgrading to a web browser that
+							  <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+							</p>
+						</video>
+						<div id="special_event_mov_title">asdsad</div>
+					</div>
+					<div id="event_mov_btn_group">
+						<div class="event_mov_btn">
+							<input id="event_mov_cum" type="radio" name="event_mov_select" class="event_mov_select" value="ipetmilk_cum_720p" checked onchange="playEventMov();">
+							<label id="event_mov_cum_label" for="event_mov_cum" class="event_move_label"></label>
+						</div>
+						<div class="event_mov_btn">
+							<input id="event_mov_rice" type="radio" name="event_mov_select" class="event_mov_select" value="ipetmilk_rice_720p" onchange="playEventMov();">
+							<label id="event_mov_rice_label" for="event_mov_rice" class="event_move_label"></label>
+						</div>
+						<div class="event_mov_btn">
+							<input id="event_mov_sausage" type="radio" name="event_mov_select" class="event_mov_select" value="ipetmilk_sausage_720p" onchange="playEventMov();">
+							<label id="event_mov_sausage_label" for="event_mov_sausage" class="event_move_label"></label>
+						</div>
+						<div class="event_mov_btn">
+							<input id="event_mov_jerky" type="radio" name="event_mov_select" class="event_mov_select" value="ipetmilk_jerky_720p" onchange="playEventMov();">
+							<label id="event_mov_jerky_label" for="event_mov_jerky" class="event_move_label"></label>
+						</div>
+						<div id="special_event_mov_title">&nbsp;</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
 		<div id="footer">
-			<video id='my-video' class='video-js' controls preload='auto' width='640' height='264' poster='img/ACB4D64D-127C-4409-A5E5-FBA2FC9B8CDA.png' data-setup='{}'>
-				<source id="movSrc" src='movie/The_Power_of_Teamwork_-_Funny_Animation.mp4' type='video/mp4'>
-				<p class='vjs-no-js'>
-				  To view this video please enable JavaScript, and consider upgrading to a web browser that
-				  <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
-				</p>
-			</video>
-			<input type="button" name="mov1" value="movie1" onclick="playMov1()">
-			<input type="button" name="mov2" value="movie2">
-			<input type="button" name="mov3" value="movie3">
-			<script type="text/javascript">
-				var playMov1 = function(){
-					var myPlayer = videojs('my-video');
-
-					myPlayer.src({type: 'video/mp4', src: 'movie/1280.mp4'});
-					myPlayer.ready(function() {
-					  myPlayer.play();
-					});
-				}
-			</script>
-			<script>
-				$(function() {
-					$('ul.tab li').click(function() {
-						var activeTab = $(this).attr('data-tab');
-						$('ul.tab li').removeClass('current');
-						$('.tabcontent').removeClass('current');
-						$(this).addClass('current');
-						$('#' + activeTab).addClass('current');
-					})
-				});
-			</script>
 		</div>
 	</div>
+
 <script src='https://vjs.zencdn.net/7.6.0/video.js'></script>
+<script type="text/javascript">
+	var playEventMov = function(){
+		var sel_radio = document.getElementsByName("event_mov_select");
+		var sel_mov = null;
+
+		for (var i = sel_radio.length - 1; i >= 0; i--) {
+			if(sel_radio[i].checked){
+				var myPlayer = videojs('my-video');
+
+				myPlayer.src({type: 'video/mp4', src: 'movie/'+sel_radio[i].value+'.mp4'});
+				myPlayer.ready(function() {
+				  myPlayer.play();
+				});
+				break;
+			}
+		}
+
+	}
+</script>
 </body>
 </html>
