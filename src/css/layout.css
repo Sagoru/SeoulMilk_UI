@@ -8,7 +8,7 @@ body { margin: 0px 0px 0px 0px; }
 .search_result_sec {
 	display: none;
 	padding: 63px;
-	width: 862px;
+	width: 1000px;
 	height: 554px;
 	background-color: #704f45;
 	border-bottom-right-radius: 15px;
@@ -23,7 +23,7 @@ body { margin: 0px 0px 0px 0px; }
 	color: red;
 }
 
-#search_label_all {background-color: #704f45;}
+#search_label_all {background-color: #704f45;padding-left: 30px;}
 #search_label_dog {background-color: #4d2418;}
 #search_label_cat {background-color: #000000;}
 
@@ -45,7 +45,7 @@ body { margin: 0px 0px 0px 0px; }
 	width: 50px;
 	display: inline-block;
 	margin: 0 0 -1px;
-	padding: 15px 17px 8px 17px;
+	padding: 15px 54px 8px 17px;
 	text-align: center;
 	color: #ffffff;
 	border-top-left-radius: 15px;
@@ -78,7 +78,7 @@ body { margin: 0px 0px 0px 0px; }
 .foot_icon {
     display: inline-block;
     vertical-align: middle;
-    padding-left: 450px;
+    padding-left: 490px;
 }
 
 
@@ -88,6 +88,19 @@ div.btn {
 }
 
 #wrap { width: 100%; text-align: center; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;}
+
+#quick_link {
+	position: fixed;
+	width: 119px;
+	height: 236px;
+	z-index: 998;
+	background-image: url("../img/menu/quick.png");
+	background-repeat: no-repeat;
+	top: 76px;
+	right: calc(10% - 100px);
+	cursor: pointer;
+
+}
 
 #gnb_div {position: absolute; width: 100%; background-color: #FFFFFF; text-align: center; z-index: 999; top: 0;}
 #gnb_div.fixed{position: fixed; z-index: 999;}
@@ -150,7 +163,7 @@ div.btn {
 
 #contest_info_div {padding-top: 74px;background-color: #d7c1ac;}
 #contest_info {height: 400px; width: 1920px; background-image: url("../img/info/bg_img02.jpg");background-repeat: no-repeat;}
-#contest_prize {height: 300px; width: 1920px; background-color: #d7c1ad; vertical-align: middle;}
+#contest_prize {height: 200px; width: 1920px; background-color: #d7c1ad; vertical-align: middle;}
 .prizes {
 	display: table;
 	width: 1000px;
@@ -168,7 +181,7 @@ div.btn {
 	display: table-cell;
 }
 .prize_item {
-	height: 170px;
+	height: 140px;
 }
 .prize_name {
 	height: 20px;
@@ -233,7 +246,7 @@ div.btn {
 	display: inline-block;
 	margin: 7px 7px 7px 7px;
 }
-#contest_vote_search {height: 830px;width: 1920px;background-color: #d7c1ad;}
+#contest_vote_search {height: 710px;width: 1920px;background-color: #d7c1ad;}
 #vote_search_div {width: 988px; }
 #search_label_all {background-color: #704f45;}
 #search_label_dog {background-color: #4d2418;}
@@ -241,7 +254,7 @@ div.btn {
 
 #special_event_div {padding-top: 74px; background-color: #d7c1ad;}
 #special_event_top {height: 620px; width: 1920px; background-image: url("../img/event/bg_img01.jpg");background-color: #FFFFFF; background-repeat: no-repeat;}
-#special_event_movie {height: 420px; width: 1920px; background-color: #ffffff;}
+#special_event_movie {height: 438px; width: 1920px; background-color: #ffffff;}
 #event_mov_play_div {background-color: #FFFFFF}
 #event_mov_play {display: inline-block;}
 #event_mov_btn_group {
@@ -249,7 +262,7 @@ div.btn {
 }
 .event_mov_btn{
 	display: flex;
-	margin: 2px;
+	margin: 1px;
 }
 .event_move_label {
 	width: 165px;
@@ -290,11 +303,11 @@ div.btn {
 	background-position: right;
 }
 #special_event_mov_title_emp {
-	margin: 16px;
+	margin: 10px;
 }
 #special_event_btn_div {
 	height: 100px; width: 1920px; background-color: #FFFFFF;
-	margin-top: 30px;
+	padding-top: 30px;
 }
 .special_event_btn {
 	cursor: pointer;
