@@ -1,0 +1,44 @@
+<div id="logo"><img src="./img/menu/logo.png"></div>
+<div id="event_logo"><img src="./img/menu/baner.png"></div>
+<div  class="open">
+  <span class="cls"></span>
+  <span>
+    <ul class="sub-menu ">
+      <li>
+        <a href="main.html" title="Main"><img src="./img/menu/menu_01.png"></a>
+      </li>
+      <li class="sub-menu-line"></li>
+      <li>
+        <a href="info.html" title="Infomation"><img src="./img/menu/menu_02.png"></a>
+      </li>
+      <li class="sub-menu-line"></li>
+      <li>
+        <a href="reg.html" title="Registratiob"><img src="./img/menu/menu_03.png"></a>
+      </li>
+      <li class="sub-menu-line"></li>
+      <li>
+        <a href="vote.html" title="Vote"><img src="./img/menu/menu_04.png"></a>
+      </li>
+      <li class="sub-menu-line"></li>
+      <li>
+        <a href="event.html" title="Event">&nbsp;<img src="./img/menu/menu_05.png">&nbsp;</a>
+      </li>
+    </ul>
+  </span>
+  <span class="cls"></span>
+</div>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(document).delegate('.open', 'click', function(event){
+      $(this).addClass('oppenned');
+      event.stopPropagation();
+    })
+    $(document).delegate('body', 'click', function(event) {
+      $('.open').removeClass('oppenned');
+    })
+    $(document).delegate('.cls', 'click', function(event){
+      $('.open').removeClass('oppenned');
+      event.stopPropagation();
+    });
+  });
+</script>

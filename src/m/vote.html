@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" >
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="서울우유 아이펫밀크">
+	<meta property="og:description" content="">
+	<meta property="og:img" content="">
+	<meta property="og:url" content="">
+	<title>서울우유 아이펫밀크</title>
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./js/lib/jquery.mousewheel.min.js"></script>
+	<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/menu-layout.m.css">
+	<link rel="stylesheet" type="text/css" href="./css/layout.m.css">
+	<link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script type="text/javascript">
+		$(function(argument) {
+			$('#menu').load('menu.html');
+			$('#footer').load('footer.html');
+		})
+	</script>
+</head>
+<body>
+	<div id="menu"></div>
+	<div id="main" align="center">
+		<div class="contents">
+			<div id="reg_title_div"></div>
+			<div id="vote_contest_best_div" align="center">
+				<div id="vote_contest_best">
+					<div id="contest_best_items">
+						<div class="best_item_div">1</div>
+						<div class="best_item_div">2</div>
+						<div class="best_item_div">3</div>
+						<div class="best_item_div">4</div>
+						<div class="best_item_div">5</div>
+						<div class="best_item_div exclude" align="center"></div>
+					</div>
+				</div>
+
+			</div>
+			<div id="contest_vote_search" align="center">
+				<div id="vote_search_div" align="left">
+					<input id="search_tab_all" type="radio" name="vote_search_option" class="search_tab_input" checked>
+					<label id="search_label_all" for="search_tab_all" class="search_label"><img src="./img/vote/text_tab1.png"></label>
+					<input id="search_tab_dog" type="radio" name="vote_search_option" class="search_tab_input">
+					<label id="search_label_dog" for="search_tab_dog" class="search_label"><img src="./img/vote/text_tab2.png"></label>
+					<input id="search_tab_cat" type="radio" name="vote_search_option" class="search_tab_input">
+					<label id="search_label_cat" for="search_tab_cat" class="search_label"><img src="./img/vote/text_tab3.png"></label>
+					<span style="display: inline-flex;">
+						<input type="text" name="search_text" class="search_text" id="vote_search_text" placeholder="유저 닉네임">
+						<div class="search_btn"><img src="./img/vote/text_search.png"></div>
+					</span>
+					<section id="vote_search_result_all" class="search_result_sec">ALL 결과</section>
+					<section id="vote_search_result_dog" class="search_result_sec">개 결과</section>
+					<section id="vote_search_result_cat" class="search_result_sec">냥 결과</section>
+				</div>
+				<div style="margin-top: 10px;margin-bottom: 10px;"><img src="./img/vote/text_1.png"></div>
+			</div>
+
+		</div>
+	</div>
+	<div id="footer" align="center"></div>
+</body>
+</html>

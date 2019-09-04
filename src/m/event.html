@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" >
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="서울우유 아이펫밀크">
+	<meta property="og:description" content="">
+	<meta property="og:img" content="">
+	<meta property="og:url" content="">
+	<title>서울우유 아이펫밀크</title>
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./js/lib/jquery.mousewheel.min.js"></script>
+	<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/menu-layout.m.css">
+	<link rel="stylesheet" type="text/css" href="./css/layout.m.css">
+	<link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script type="text/javascript">
+		$(function(argument) {
+			$('#menu').load('menu.html');
+			$('#footer').load('footer.html');
+		})
+	</script>
+</head>
+<body>
+	<div id="menu"></div>
+	<div id="main" align="center">
+		<div class="contents">
+			<div id="event_div"></div>
+			<div id="snsshare_div">
+				<img class="img_btn" src="./img/event/icon01_kakao.png">
+				<img class="img_btn" src="./img/event/icon02_story.png">
+				<img class="img_btn" src="./img/event/icon03_face.png">
+				<img class="img_btn" src="./img/event/icon04_twitter.png">
+			</div>
+			<div id="event_movs_div">
+				<div id="event_mov_play">
+					<video id='my-video' class='video-js' controls preload='auto' width='683' height='383' data-setup='{}'>
+						<source id="movSrc" src='../movie/ipetmilk_cum_720p.mp4' type='video/mp4'>
+						<p class='vjs-no-js'>
+						  To view this video please enable JavaScript, and consider upgrading to a web browser that
+						  <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+						</p>
+					</video>
+				</div>
+				<div id="special_event_mov_title_div">
+					<div id="special_event_mov_title" style="background-image: url('./img/event/ipetmilk_cum.png');"></div>
+				</div>
+				<div id="event_mov_btn_group">
+					<div class="event_mov_btn">
+						<input id="event_mov_cum" type="radio" name="event_mov_select" class="event_mov_select" value="ipetmilk_cum" checked onchange="playEventMov();">
+						<label id="event_mov_cum_label" for="event_mov_cum" class="event_move_label"></label>
+					</div>
+					<div class="event_mov_btn">
+						<input id="event_mov_rice" type="radio" name="event_mov_select" class="event_mov_select" value="ipetmilk_rice" onchange="playEventMov();">
+						<label id="event_mov_rice_label" for="event_mov_rice" class="event_move_label"></label>
+					</div>
+					<div class="event_mov_btn">
+						<input id="event_mov_sausage" type="radio" name="event_mov_select" class="event_mov_select" value="ipetmilk_sausage" onchange="playEventMov();">
+						<label id="event_mov_sausage_label" for="event_mov_sausage" class="event_move_label"></label>
+					</div>
+					<div class="event_mov_btn">
+						<input id="event_mov_jerky" type="radio" name="event_mov_select" class="event_mov_select" value="ipetmilk_jerky" onchange="playEventMov();">
+						<label id="event_mov_jerky_label" for="event_mov_jerky" class="event_move_label"></label>
+					</div>
+				</div>
+				<div id="event_btn_div">
+					<img class="img_btn" src="./img/event/btn_insta.png">
+					<img class="img_btn" src="./img/event/btn_url.png">
+				</div>
+				<script src='https://vjs.zencdn.net/7.6.0/video.js'></script>
+				<script type="text/javascript">
+					var playEventMov = function() {
+						var sel_radio = document.getElementsByName("event_mov_select");
+						var sel_mov = null;
+
+						for (var i = sel_radio.length - 1; i >= 0; i--) {
+							if(sel_radio[i].checked){
+								var myPlayer = videojs('my-video');
+
+								myPlayer.src({type: 'video/mp4', src: '../movie/'+sel_radio[i].value+'_720p.mp4'});
+								myPlayer.ready(function() {
+								  myPlayer.play();
+								});
+
+								document.getElementById("special_event_mov_title").style.backgroundImage = "url('./img/event/"+sel_radio[i].value+".png')";
+								break;
+							}
+						}
+
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+	<div id="footer" align="center"></div>
+</body>
+</html>

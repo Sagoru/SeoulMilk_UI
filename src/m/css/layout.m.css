@@ -1,0 +1,309 @@
+html {
+  box-sizing: border-box;
+}
+
+
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #161616;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+}
+.img_btn {
+	cursor: pointer;
+}
+#menu {
+	width: 100%;
+	height: 112px;
+	border-bottom: solid #916e56 5px;
+	position: fixed;
+	background-color: #FFFFFF;
+}
+#logo {
+	height: 112px;
+	padding-top: 25px;
+    padding-left: 10px;
+}
+#event_logo {
+	position: fixed;
+    right: 130px;
+    top: 25px;
+    cursor: pointer;
+}
+#main {
+	padding-top: 112px;
+	width: 100%;
+}
+.contents {
+	width: 750px;
+}
+#contest_info_div {
+	width: 100%;
+	height: 623px;
+	background-image: url("../img/contest/bg_img01.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+
+}
+#contest_best_div {
+	width: 100%;
+	height: 560px;
+	background-color: #FFFFFF;
+
+}
+#contest_best {
+	width: 100%;
+	height: 560px;
+	background-color: #d8c1ad;
+
+}
+#contest_best_items {
+	width: 600px;
+	height: 400px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 10px;
+}
+.best_item_div {
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+.best_item_div.exclude {
+	background-color: #d8c1ad;
+	background-image: url("../img/contest/icon_dog.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#contest_banner {
+	margin-top: 30px;
+}
+#info_div {
+	width: 100%;
+	height: 913px;
+	background-image: url("../img/info/bg_img01.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#info_alert_div {
+	width: 100%;
+	height: 50px;
+	background-color: #d8c1ad;
+}
+#info_alert_div {
+
+}
+#info_calc_div {
+	width: 100%;
+	height: 257px;
+	background-image: url("../img/info/bg_img02.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#reg_title_div {
+	width: 100%;
+	height: 493px;
+	background-image: url("../img/reg/bg_img01.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#reg_order_div {
+	width: 100%;
+	height: 970px;
+	background-color: #d8c1ad;
+}
+#reg_orders {
+	width: 606px;
+	height: 710px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 10px;
+
+}
+#contest_vote_search {height: 604px;width: 100%;background-color: #d7c1ad;}
+#vote_search_div {width: 100%;}
+#search_label_all {background-color: #704f45;}
+#search_label_dog {background-color: #4d2418;}
+#search_label_cat {background-color: #000000;}
+.search_result_sec {
+	display: none;
+	padding: 63px;
+	width: 100%;
+	height: 554px;
+	background-color: #704f45;
+}
+
+.search_tab_input {
+	display: none;
+}
+.search_tab_input:checked + label {
+	color: red;
+}
+
+#search_label_all {background-color: #704f45;padding-left: 20px;padding-right: 65px;}
+#search_label_dog {background-color: #4d2418;}
+#search_label_cat {background-color: #000000;}
+
+#vote_search_result_all {
+	background-color: #704f45;
+}
+#vote_search_result_dog {
+	background-color: #4d2418;
+}
+#vote_search_result_cat {
+	background-color: #000000;
+}
+#search_tab_all:checked ~ #vote_search_result_all,
+#search_tab_dog:checked ~ #vote_search_result_dog,
+#search_tab_cat:checked ~ #vote_search_result_cat {
+	display: block;
+}
+.search_label {
+	width: 50px;
+	display: inline-block;
+	margin: 0 0 -1px;
+    padding: 15px 91px 8px 17px;
+	text-align: center;
+	color: #ffffff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.search_label:hover {
+	color: red;
+	cursor: pointer;
+}
+.search_btn {
+	background-color: red;
+    font-size: 14px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.search_text {
+	color: #6a6a6a;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    margin-left: 150px;
+}
+#vote_contest_best_div {
+	width: 100%;
+	height: 450px;
+	background-color: #FFFFFF;
+
+}
+#vote_contest_best {
+	width: 100%;
+	height: 450px;
+	background-color: #d8c1ad;
+
+}
+#event_div {
+	width: 100%;
+	height: 566px;
+	background-image: url("../img/event/bg_img01.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#snsshare_div {
+	width: 100%;
+	height: 100px;
+	padding-top: 20px;
+	background-color: #e4d5c7;
+}
+#event_movs_div {
+	width: 100%;
+	height: 615px;
+	background-color: #e4d5c7;
+}
+#event_mov_btn_group {
+	display: inline-block;
+	width: 100%;
+}
+.event_mov_btn{
+	display: inline-block;
+	margin: 2px;
+}
+.event_move_label {
+	width: 165px;
+	height: 98px;
+}
+.event_mov_select{
+	display: none;
+}
+#event_mov_cum_label {
+	background-image: url("../img/event/btn_video01.png");
+}
+#event_mov_cum:checked ~ #event_mov_cum_label {
+	background-image: url("../img/event/btn_video01_on.png");
+}
+#event_mov_rice_label {
+	background-image: url("../img/event/btn_video02.png");
+}
+#event_mov_rice:checked ~ #event_mov_rice_label {
+	background-image: url("../img/event/btn_video02_on.png");
+}
+#event_mov_sausage_label {
+	background-image: url("../img/event/btn_video03.png");
+}
+#event_mov_sausage:checked ~ #event_mov_sausage_label {
+	background-image: url("../img/event/btn_video03_on.png");
+}
+#event_mov_jerky_label {
+	background-image: url("../img/event/btn_video04.png");
+}
+#event_mov_jerky:checked ~ #event_mov_jerky_label {
+	background-image: url("../img/event/btn_video04_on.png");
+}
+#special_event_mov_title {
+	width: 683px;
+	margin: 5px;
+	text-align: right;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 10px;
+}
+#event_btn_div .img_btn {
+	margin: 7px;
+}
+#footer {
+	width: 100%;
+}
+#footer_div {
+    width: 750px;
+    height: 80px;
+    background-color: #1d1e1f;
+    font-size: 11px;
+    display: flex;
+    color: #f9f9f9;
+    padding: 25px;
+}
+#footer_copyright {
+	padding-left: 12px;
+	text-align: left;
+}

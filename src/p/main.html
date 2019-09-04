@@ -10,7 +10,7 @@
 	<meta property="og:url" content="">
 	<title>서울우유 아이펫밀크</title>
 	<!-- JS -->
-	<script type="text/javascript" src="./js/lib/jquery-3.4.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/lib/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="./js/lib/jquery.mousewheel.min.js"></script>
 	<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
@@ -140,7 +140,7 @@
 				<div id="event_mov_play_div">
 					<div id="event_mov_play">
 						<video id='my-video' class='video-js' controls preload='auto' width='709' height='409' data-setup='{}'>
-							<source id="movSrc" src='movie/ipetmilk_cum_720p.mp4' type='video/mp4'>
+							<source id="movSrc" src='../movie/ipetmilk_cum_720p.mp4' type='video/mp4'>
 							<p class='vjs-no-js'>
 							  To view this video please enable JavaScript, and consider upgrading to a web browser that
 							  <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
@@ -193,7 +193,7 @@
 			if(sel_radio[i].checked){
 				var myPlayer = videojs('my-video');
 
-				myPlayer.src({type: 'video/mp4', src: 'movie/'+sel_radio[i].value+'_720p.mp4'});
+				myPlayer.src({type: 'video/mp4', src: '../movie/'+sel_radio[i].value+'_720p.mp4'});
 				myPlayer.ready(function() {
 				  myPlayer.play();
 				});
